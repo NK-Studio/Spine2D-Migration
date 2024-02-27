@@ -1,7 +1,4 @@
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
-
 using UnityEngine;
 
 namespace NKStudio.Spine
@@ -15,6 +12,7 @@ namespace NKStudio.Spine
         private const string SettingFilePath = "Assets/Editor/" + FileName + ".asset";
 
         private static Spine2DMigrationSettings _instance;
+
         public static Spine2DMigrationSettings Instance
         {
             get
@@ -24,12 +22,11 @@ namespace NKStudio.Spine
                     _instance = AssetDatabase.LoadAssetAtPath<Spine2DMigrationSettings>(SettingFilePath);
                     if (_instance == null)
                     {
-#if UNITY_EDITOR
                         if (!AssetDatabase.IsValidFolder(SettingFileDirectory))
                             AssetDatabase.CreateFolder("Assets", "Resources");
-#endif
+
                         _instance = AssetDatabase.LoadAssetAtPath<Spine2DMigrationSettings>(SettingFilePath);
-#if UNITY_EDITOR
+
                         if (_instance == null)
                         {
                             _instance = CreateInstance<Spine2DMigrationSettings>();
@@ -37,7 +34,6 @@ namespace NKStudio.Spine
 
                             AssetDatabase.CreateAsset(_instance, SettingFilePath);
                         }
-#endif
                     }
                 }
 
