@@ -8,7 +8,7 @@ namespace NKStudio.Spine
     public class SpineLegacyMigration : AssetPostprocessor
     {
         // PostprocessOrder를 0으로 설정하여 다른 Postprocessor보다 먼저 실행되도록 합니다.
-        public override int GetPostprocessOrder() => 0;
+        public override int GetPostprocessOrder() => -1;
         
         private static void OnPostprocessAllAssets(string[] importedAssets, string[] deletedAssets,
             string[] movedAssets,
