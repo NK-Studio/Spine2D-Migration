@@ -27,7 +27,7 @@ namespace NKStudio.Spine
 
         private void InitRoot(VisualElement root)
         {
-            string uxmlPath = AssetDatabase.GUIDToAssetPath("bef52a52716bcdd41b8fad7b2e438f91");
+            string uxmlPath = AssetDatabase.GUIDToAssetPath("ce5817625fff50848b0482b2f2582b24");
             VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(uxmlPath);
             VisualElement doc = visualTree.Instantiate();
             root.Add(doc);
@@ -38,7 +38,6 @@ namespace NKStudio.Spine
             VisualElement root = rootVisualElement;
             InitRoot(root);
             
-
             TextField targetVersionField = root.Q<TextField>("TargetVersion");
             HelpBox infoBox = root.Q<HelpBox>("infoBox");
 
