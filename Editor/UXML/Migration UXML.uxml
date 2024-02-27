@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:Label text="Spine2D Migration " display-tooltip-when-elided="true" style="-unity-text-align: middle-center; font-size: 24px; -unity-font-style: bold; margin-top: 12px; margin-bottom: 12px;" />
+    <ui:TextField picking-mode="Ignore" label="Target Version" name="TargetVersion" is-delayed="true" />
+    <ui:VisualElement name="Space" style="height: 4px;" />
+    <ui:HelpBox text="변환하려고자 하는 스파인 버전을 작성합니다." messageType="Info" message-type="Info" name="infoBox" />
+</ui:UXML>

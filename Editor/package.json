@@ -1,0 +1,10 @@
+{
+  "name": "com.nkstudio.spine2d.migration",
+  "displayName": "Spine2D Migration",
+  "version": "1.0.0",
+  "unity": "2021.3",
+  "description": "스파인2D 3.8버전에서 제작한 리소스도 유니티 최신버전에서 동작하도록 해줍니다.",
+  "author": {
+    "name": "NK Studio"
+  },
+}
